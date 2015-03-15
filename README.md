@@ -15,8 +15,7 @@ Pik is a responsive slider which you included on your template. It is totaly res
 					</div>
 					<div class="sc-author">
 						<h2></h2>
-					</div>	<h2></h2>
-					</div>
+					</div>	
 				</li>
 	
 			</ul>
