@@ -44,3 +44,6 @@ Pik is a responsive slider which you included on your template. It is totaly res
 	      	});
 	      });	
 	</script>
+	
+#License:
+pik carousel is released under the [MIT license](http://www.opensource.org/licenses/MIT).
