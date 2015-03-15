@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+	
+<!-- Mirrored from www.skyplugins.com/sky-jquery-touch-carousel/documentation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Mar 2015 12:04:42 GMT -->
+<head>
+
+		<!-- Basic Page Needs
+		 ================================================== -->
+		<meta charset="utf-8">
+		<title>Sky jQuery Touch Carousel Documentation</title>
+
+		<!-- Mobile Specific
+		 ================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- CSS
+		 ================================================== -->
+		<link rel="stylesheet" type="text/css"  href="css/style.css">
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+		<!-- Java Script
+		 ================================================== -->
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/ender.min.js"></script>
+		<script src="js/selectnav.js"></script>
+		<script src="js/twitter.js"></script>
+		<script src="js/effects.js"></script>
+		<script type="text/javascript" src="js/prettify.js"></script>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-39161546-1']);
+			_gaq.push(['_setDomainName', 'skyplugins.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+	</head>
+	<body onload="prettyPrint()">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- 960 Container Start -->
+			<div class="container ie-dropdown-fix">
+
+				<!-- Logo -->
+				<div class="four columns">
+					<a href="tooltip_skin_variation.html"><img src="images/logo.png" alt=""/></a>
+				</div>
+
+				<!-- Main Navigation Start -->
+				<div class="twelve columns">
+					<div id="navigation">
+						<ul id="nav">				
+							<li><a href="default_skin.html">Home</a></li>
+
+							<li><a href="#">Skins</a>
+								<ul>
+									<li><a href="default_skin.html">Default Skin</a></li>
+									<li><a href="default_skin_variation.html">Default Skin Variation</a></li>
+									<li><a href="tooltip_skin.html">Tooltip Skin</a></li>
+									<li><a href="tooltip_skin_variation.html">Tooltip Skin Variation</a></li>
+								</ul>
+							</li>
+							<li><a id="current" href="documentation.html">Documentation</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Main Navigation End -->
+
+			</div>
+			<!-- 960 Container End -->
+
+		</div>
+		<!-- End Header -->
+
+
+		<!--  Page Title -->
+		<div id="page-title">
+
+			<!-- 960 Container Start -->
+			<div class="container">
+				<div class="sixteen columns">
+					<h2>Sky jQuery Touch Carousel Documentation<span> (v1.0.2)</span></h2>
+				</div>
+			</div>
+			<!-- 960 Container End -->
+
+		</div>
+		<!-- Page Title End -->
+
+
+		<!-- 960 Container -->
+		<div class="container">
+			<!-- Sidebar
+			================================================== -->
+			<div class="five columns">
+				<div class="sidebar">
+
+					<!-- Categories -->
+					<div class="widget">
+						<h5>Table of Contents</h5>
+						<ul class="categories">
+							<li><a href="#getting-started">Getting Started</a></li>
+							<li><a href="#introducing-the-files">Introducing the Files</a></li>
+							<li><a href="#include-the-files">Include the Files</a></li>
+							<li><a href="#create-html-markup">Create HTML Markup</a></li>
+							<li><a href="#initializing-the-plugin">Initializing the Plugin</a></li>
+							<li><a href="#changing-the-size">Changing the Size</a></li>
+							<li><a href="#using-the-skins">Using the Skins</a></li>
+							<li><a href="#modifying-the-appearance">Modifying the Appearance</a></li>
+							<li><a href="#plugin-options">Plugin Options</a></li>
+							<li><a href="#advanced-usage">Advanced Usage</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Content
+			================================================== -->
+			<div id="documentation" class="eleven columns">
+				<div id="getting-started" class="eleven columns">
+					<h4 class="headline">Getting Started</h4>
+					<p>Before you start, let's take a look at the files and folders in the package. The main directory contains the example files and other type of resources. The following section describes the directories and files located under the main directory.</p>
+				</div>
+				<div id="introducing-the-files" class="eleven columns">
+					<h4 class="headline">Introducing the Files</h4>
+					<ul>
+						<li>
+							<strong>/source</strong>
+							<p>The source directory contains all of the necessary files to deploy the plugin.</p>
+							<ul>
+								<li>
+									<strong>/js</strong>
+									<p>The js directory contains all of the JavaScript files for the plugin. These files are;</p>
+									<ul>
+										<li>
+											<strong>jquery-1.9.1.min.js</strong>
+											<p>The core jQuery library. Visit <a href="http://www.jquery.com/" target="_blank">http://www.jquery.com</a> for more information.</p>
+										</li>
+										<li>
+											<strong>jquery.sky.carousel-1.0.2.min.js</strong>
+											<p>The main JavaScript file for Sky jQuery Touch Carousel.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<strong>/css</strong>
+									<p>The css directory contains the stylesheet files for the plugin.</p>
+								</li>
+								<li>
+									<strong>/images</strong>
+									<p>The images directory contains the images for the skin files and examples.</p>
+									<ul>
+										<li>
+											<strong>/sc-graphics</strong>
+											<p>Contains the image files for the skins.</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<strong>Example HTML files</strong>
+									<p>Contains the example HTML files that you can play around to learn the general usage of the plugin.</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong>/src</strong>
+							<p>The src directory contains the source files for the plugin. You don't need to use them if you're not planning to modify the source code.</p>
+						</li>
+						<li>
+							<strong>/documentation</strong>
+							<p>The documentation directory contains the help file as a simple HTML file.</p>
+						</li>
+						<li>
+							<strong>/psd-photoshop</strong>
+							<p>The psd-photoshop directory contains the original photoshop files for some skins.</p>
+						</li>
+						<li>
+							<strong>/build</strong>
+							<p>The build directory contains a batch file to build a single JavaScript file out of the source files. In addition, it contains a compiler.jar file which is required during creating the minimal version of the plugin. The compiled version of the plugin can be created by double clicking on the build.bat file. See <a href="https://developers.google.com/closure/compiler/" target="_blank">https://developers.google.com/closure/compiler/</a> for more information.</p>
+						</li>
+					</ul>
+				</div>
+
+				<div id="include-the-files" class="eleven columns alpha">
+					<h4 class="headline">Include the Files</h4>
+
+					<p>You need to add the following javascript and css files into your header. Add the files in this order to avoid unexpected problems.</p>
+
+					<pre class="prettyprint linenums">&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/default_skin.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.sky.carousel-1.0.2.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+				</div>
+
+				<div id="create-html-markup" class="eleven columns alpha">
+					<h4 class="headline">Create HTML Markup</h4>		
+					<p>You should start creating your markup with a main DIV that has <i>.sky-carousel</i> as a css class. There should be another DIV called <i>.sky-carousel-wrapper</i> under the main DIV. Under the <i>.sky-carousel-wrapper</i> DIV, there will be an unordered list called <i>.sky-carousel-container</i>. It will hold the carousel items.</p>
+					<p>Each list item under the <i>.sky-carousel-container</i> represents a carousel item. Each carousel item contains an <i>&lt;img&gt;</i> tag, followed by a DIV called <i>.sc-content</i>. The <i>&lt;img&gt;</i> tag should point to the carousel image and the <i>.sc-content</i> DIV should contain the content for that particular carousel item. The tags that should be used in <i>.sc-content</i> are <i>&lt;h2&gt;</i> and <i>&lt;p&gt;</i> respectively. You can add your own markup inside the <i>&lt;p&gt;</i> tag.</p>
+					<p>Have a look at the code below to understand the use:</p>
+					<pre class="prettyprint linenums">&lt;div id=&quot;your-carousel-id&quot; class=&quot;sky-carousel&quot;&gt;
+	&lt;div class=&quot;sky-carousel-wrapper&quot;&gt;
+		&lt;ul class=&quot;sky-carousel-container&quot;&gt;
+			&lt;li&gt;
+				&lt;img src=&quot;images/1.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;sc-content&quot;&gt;
+					&lt;h2&gt;Peter Bell&lt;/h2&gt;
+					&lt;p&gt;Software Developer&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;img src=&quot;images/2.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;sc-content&quot;&gt;
+					&lt;h2&gt;Adam Rose&lt;/h2&gt;
+					&lt;p&gt;Graphic Designer&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;img src=&quot;images/3.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;sc-content&quot;&gt;
+					&lt;h2&gt;Josh Coil&lt;/h2&gt;
+					&lt;p&gt;Chief Editor&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;							
+			&lt;li&gt;
+				&lt;img src=&quot;images/4.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;sc-content&quot;&gt;
+					&lt;h2&gt;Richard Will&lt;/h2&gt;
+					&lt;p&gt;Support Manager&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;img src=&quot;images/5.png&quot; alt=&quot;&quot; /&gt;
+				&lt;div class=&quot;sc-content&quot;&gt;
+					&lt;h2&gt;Steve Goldman&lt;/h2&gt;
+					&lt;p&gt;Marketing Manager&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+
+				<div id="initializing-the-plugin" class="eleven columns alpha">
+					<h4 class="headline">Initializing the Plugin</h4>
+
+					<p>Initializing the plugin is pretty simple. Just add the following code piece at the end of your header. See the examples files in the package to learn how to use additional settings.</p>
+					<p>If you are unfamiliar with jQuery, please see this tutorial: <a href="http://docs.jquery.com/Tutorials:How_jQuery_Works">http://docs.jquery.com/Tutorials:How_jQuery_Works</a></p>
+					<pre class="prettyprint linenums">$(function() {
+	$(&#39;#your-carousel-id&#39;).carousel({
+		itemWidth: 200, // The width of your images.
+		itemHeight: 350 // The height of your images.
+	});
+});</pre>	
+				</div>
+
+				<div id="changing-the-size" class="eleven columns alpha">
+					<h4 class="headline">Changing the Size</h4>
+
+					<p>The size of the carousel can be set through CSS. Open the CSS file with your text editor, find the CSS definition for <i>.sky-carousel</i> class and set the dimensions that you like.</p>
+					<p>You can ignore the width or set it in percentage if you want the carousel to fit into the surrounding container. To set a fixed width just add a width value in px.</p>		
+					<pre class="prettyprint linenums">.sky-carousel {
+	width: 100%; // Set it in px for a fixed width
+	height: 450px;
+}
+					</pre>	
+					<br />
+					<p>If you don't want to edit the original skin files, you can always add a CSS definition into your own stylesheet file as in the following example.</p>
+					<pre class="prettyprint linenums">#your-carousel-id {
+	width: 100% !important;
+	height: 450px !important;
+}
+					</pre>
+				</div>
+
+				<div id="using-the-skins" class="eleven columns alpha">
+					<h4 class="headline">Using the Skins</h4>
+					<p>The plugin comes with several skin files that you can switch between. Each skin file has its own CSS definitions inside a separate file. Changing a skin is easy, just include the related CSS file into your header. Remember that there is no such thing called base CSS in Sky jQuery Touch Carousel. Each skin file also contains the base CSS definitions for the plugin so you don't have to include another stylesheet.</p>
+					<p>You can select between one of these skin files and add it into the head section:</p>
+					<pre class="prettyprint linenums">&lt;link href=&quot;css/default_skin.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;link href=&quot;css/default_skin_variation.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;link href=&quot;css/tooltip_skin.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;link href=&quot;css/tooltip_skin_variation.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;</pre>
+				</div>
+
+				<div id="modifying-the-appearance" class="eleven columns alpha">
+					<h4 class="headline">Modifying the Appearance</h4>
+					<p>You can change the visual appearance of the plugin through CSS. Just copy one of the skin files and start modifying it to match your target design. Alternatively, you can override the existing CSS definitions in your own CSS files.</p>
+				</div>
+
+				<div id="plugin-options" class="eleven columns alpha">
+					<h4 class="headline">Plugin Options</h4>
+					<p>There are several useful configuration parameters that you can use to change the default behavior of the plugin.</p>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr class="tbl-header">
+								<th>Parameter</th>
+								<th>Default</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>itemWidth</td>
+								<td>300</td>
+								<td>The width of the carousel item images.</td>
+							</tr>
+							<tr>
+								<td>itemHeight</td>
+								<td>450</td>
+								<td>The height of the carousel item images.</td>
+							</tr>
+							<tr>
+								<td>distance</td>
+								<td>15</td>
+								<td>The distance between the carousel items.</td>
+							</tr>
+							<tr>
+								<td>startIndex</td>
+								<td>'auto'</td>
+								<td>The index of the carousel item to show at start-up. Use 0 for the first item and 'auto' for the middle.</td>
+							</tr>
+							<tr>
+								<td>enableKeyboard</td>
+								<td>true</td>
+								<td>If it's set to true, you can use the direction keys on your keyboard to navigate between the carousel items.</td>
+							</tr>
+							<tr>
+								<td>enableMouseWheel</td>
+								<td>true</td>
+								<td>If it's set to true, you can use the mouse wheel to switch between the carousel items.</td>
+							</tr>
+							<tr>
+								<td>reverseMouseWheel</td>
+								<td>false</td>
+								<td>Indicates whether the direction of the mouse wheel navigation will be reversed.</td>
+							</tr>
+							<tr>
+								<td>autoSlideshow</td>
+								<td>false</td>
+								<td>Indicates whether to display the items in auto slideshow mode.</td>
+							</tr>
+							<tr>
+								<td>autoSlideshowDelay</td>
+								<td>2.5</td>
+								<td>The number of seconds to wait for each carousel item during auto slideshow mode.</td>
+							</tr>
+							<tr>
+								<td>loop</td>
+								<td>true</td>
+								<td>If it's set to true, the auto slideshow returns to the first item after showing the last one. This option only works when the autoSlideshow parameter is set to true.</td>
+							</tr>
+							<tr>
+								<td>selectedItemDistance</td>
+								<td>50</td>
+								<td>The distance between the currently selected item and other items.</td>
+							</tr>
+							<tr>
+								<td>selectedItemZoomFactor</td>
+								<td>1.0</td>
+								<td>The scale factor for the currently selected item. It should be equal to or less than 1.0.</td>
+							</tr>
+							<tr>
+								<td>unselectedItemZoomFactor</td>
+								<td>0.6</td>
+								<td>The scale factor for the unselected items. It should be equal to or less than 1.0.</td>
+							</tr>
+							<tr>
+								<td>unselectedItemAlpha</td>
+								<td>0.6</td>
+								<td>The opacity of the unselected carousel items.</td>
+							</tr>
+							<tr>
+								<td>motionStartDistance</td>
+								<td>150</td>
+								<td>The distance between the center and the place on each side where item scaling and other property updates will begin changing. (Such as opacity, scale)</td>
+							</tr>
+							<tr>
+								<td>topMargin</td>
+								<td>30</td>
+								<td>The distance between the top of the plugin and the currently selected item.</td>
+							</tr>
+							<tr>
+								<td>preload</td>
+								<td>true</td>
+								<td>Indicates whether to preload all of the items at start and then start the plugin.</td>
+							</tr>
+							<tr>
+								<td>showPreloader</td>
+								<td>true</td>
+								<td>Indicates whether a preloader will be shown while loading the images.</td>
+							</tr>
+							<tr>
+								<td>navigationButtonsVisible</td>
+								<td>true</td>
+								<td>Indicates whether the navigation buttons will be visible.</td>
+							</tr>
+							<tr>
+								<td>gradientStartPoint</td>
+								<td>0.15</td>
+								<td>The color start point for the gradient overlays. It should be between 0 and 1.0</td>
+							</tr>
+							<tr>
+								<td>gradientEndPoint</td>
+								<td>1.0</td>
+								<td>The color end point for the gradient overlays. It should be between 0 and 1.0</td>
+							</tr>
+							<tr>
+								<td>gradientOverlayVisible</td>
+								<td>true</td>
+								<td>Indicates whether the gradient overlays will be visible.</td>
+							</tr>
+							<tr>
+								<td>gradientOverlayColor</td>
+								<td>'#fff'</td>
+								<td>The color of the gradient overlays.</td>
+							</tr>
+							<tr>
+								<td>gradientOverlaySize</td>
+								<td>215</td>
+								<td>The width of the gradient overlays.</td>
+							</tr>
+							<tr>
+								<td>reflectionVisible</td>
+								<td>false</td>
+								<td>Indicates whether the item image reflection will be visible.</td>
+							</tr>
+							<tr>
+								<td>reflectionDistance</td>
+								<td>4</td>
+								<td>The distance between the image and the reflection.</td>
+							</tr>
+							<tr>
+								<td>reflectionSize</td>
+								<td>100</td>
+								<td>The height of the reflection.</td>
+							</tr>
+							<tr>
+								<td>reflectionAlpha</td>
+								<td>0.38</td>
+								<td>The opacity of the reflection.</td>
+							</tr>
+							<tr>
+								<td>slideSpeed</td>
+								<td>0.45</td>
+								<td>The slide transition speed in seconds.</td>
+							</tr>
+							<tr>
+								<td>selectByClick</td>
+								<td>false</td>
+								<td>Indicates whether a carousel item can be selected with a single click.</td>
+							</tr>
+						</tbody>        
+					</table>
+				</div>
+
+				<div id="advanced-usage" class="eleven columns alpha">
+					<h4 class="headline">Advanced Usage</h4>
+					<p>The plugin API offers very useful methods and events for advanced JavaScript and jQuery developers. The current API includes methods for selecting individual items and controlling the auto slideshow. There are also several events which can be used to be notified when a certain thing happens. A full list of the available methods and events can be found below:</p>
+					<p><strong>Methods:</strong></p>
+					<pre class="prettyprint linenums">/**
+ * Starts the auto slideshow.
+ */
+startAutoSlideshow();
+
+/**
+ * Stops the auto slideshow.
+ */
+stopAutoSlideshow();
+
+/**
+ * Selects the given item.
+ * 
+ * @param {Number | CarouselItem} arg The item index or the actual item to be selected.
+ * @param {Number} duration Indicates the duration that the selection animation will take.
+ */
+select(arg, duration);
+
+/**
+ * Selects the next carousel item in the queue.
+ * @param {Number} duration Indicates the duration that the selection animation will take.
+ */
+selectNext(duration);
+
+/**
+ * Selects the previous carousel item in the queue.
+ * @param {Number} duration Indicates the duration that the selection animation will take.
+ */
+selectPrevious(duration);</pre>
+					<br />
+					<p><strong>Events:</strong></p>
+					<pre class="prettyprint linenums">itemSelected.sc // Dispatched when a carousel item is selected.
+closestItemChanged.sc // Dispatched when the closest item to the center has been changed.
+selectionAnimationStart.sc // Dispatched when the selection animation has started.
+selectionAnimationEnd.sc // Dispatched when the selection animation has ended.
+					</pre>
+
+					<br />
+					<p><strong>Examples:</strong></p>
+					<pre class="prettyprint linenums">&lt;script type=&quot;text/javascript&quot;&gt;
+	$(function() {
+		// Acquire a reference to the carousel
+		var carousel = $(&#39;#your-carousel-id&#39;).carousel({
+			itemWidth: 300,
+			itemHeight: 450,
+			distance: 15,
+			selectedItemDistance: 50
+		});
+		
+		// Select the 2nd item with 4 second selection animation
+		carousel.select(2, 4);
+		
+		// Select the next item with no animation
+		carousel.selectNext(0);
+		
+		// Select the previous item with 2 second selection animation
+		carousel.selectPrev(2);
+		
+		// Start auto slideshow
+		carousel.startAutoSlideshow();
+		
+		// Stop auto slideshow
+		carousel.stopAutoSlideshow();
+		
+		// Print the selected item&#39;s index to the console
+		carousel.on(&#39;itemSelected.sc&#39;, function(evt) {
+			console.log(evt.item.index());
+		});
+		
+		// Print the closest item&#39;s index to the console
+		carousel.on(&#39;closestItemChanged.sc&#39;, function(evt) {
+			console.log(evt.item.index());
+		});
+		
+		// Append some text to the body when the selection animation has started
+		carousel.on(&#39;selectionAnimationStart.sc&#39;, function(evt) {
+			$(&#39;body&#39;).append(&#39;&lt;p&gt;Animation has started...&lt;/p&gt;&#39;);
+		});
+		
+		// Append some text to the body when the selection animation has ended
+		carousel.on(&#39;selectionAnimationEnd.sc&#39;, function(evt) {
+			$(&#39;body&#39;).append(&#39;&lt;p&gt;Animation has ended...&lt;/p&gt;&#39;);
+		});
+	});
+&lt;/script&gt;</pre>
+					<br />
+					<p>If you are planning to make any modifications to the codebase. Use build.bat to create a minified and single JavaScript file. After running build.bat, you can find the compiled version under the js directory. See <a href="https://developers.google.com/closure/compiler/" target="_blank">https://developers.google.com/closure/compiler/</a> for more information about the closure compiler.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+		<!-- End 960 Container -->
+
+		<!-- Footer Start -->
+		<div id="footer">
+
+			<!-- 960 Container -->
+			<div class="container">
+
+				<!-- About -->
+				<div class="four columns">
+					<h5>About Us</h5>
+					<p>Copyright © 2013 Sky Plugins. </p>
+					<p>We're a highly skilled team of web developers who build awesome JavaScript and WordPress plugins for your web development needs.</p>
+				</div>
+
+				<!-- Useful Links -->
+				<div class="four columns">
+					<h5>Useful Links</h5>
+					<ul class="links-list">
+						<li><a href="#">Frequently Asked Questions</a></li>
+						<li><a href="#">Community Forum</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+
+				<!-- Twitter -->
+				<div class="four columns">
+					<h5>Latest Tweets</h5>
+					<ul id="twitter"></ul>
+					<script type="text/javascript">
+						jQuery(document).ready(function($){
+							$.getJSON('http://api.twitter.com/1/statuses/user_timeline/SkyPlugins.json?count=2&amp;callback=?', function(tweets){
+								$("#twitter").html(tz_format_twitter(tweets));
+							}); });
+					</script>
+					<div class="clearfix"></div>
+				</div>
+
+				<!-- Latest From Blog -->
+				<div id="contact-us" class="four columns">
+					<h5>Contact Us</h5>
+					<p>We like receiving emails from our visitors. Please don't hesitate to contact us for any of your pre-sales and after-sales questions. We have created a <a href="#">contact form</a> which you can use to contact us.</p>
+				</div>
+			</div>
+			<!-- 960 Container End -->
+
+		</div>
+		<!-- Footer End -->
+
+		<!--  Footer Copyright-->
+		<div id="footer-bottom">
+
+			<!-- 960 Container -->
+			<div class="container">
+
+				<div class="eight columns">
+					<div id="copyright">© Copyright 2012 by Sky Plugins. All Rights Reserved.</div>
+				</div>
+
+				<div class="eight columns">
+					<ul class="social-links">
+						<li class="twitter"><a href="https://twitter.com/SkyPlugins">Twitter</a></li>
+						<li class="facebook"><a href="https://www.facebook.com/SkyPlugins">Facebook</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- End 960 Container -->
+
+		</div>
+		<!--  Footer Copyright End -->
+
+		<!-- Back To Top Button -->
+		<div id="backtotop"><a href="#"></a></div>
+
+	</body>
+
+<!-- Mirrored from www.skyplugins.com/sky-jquery-touch-carousel/documentation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Mar 2015 12:04:51 GMT -->
+</html>
