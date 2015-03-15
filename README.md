@@ -7,15 +7,6 @@ Pik is a responsive slider which you included on your template. It is totaly res
 `<div class="pik-carousel">
 	<div class="pik-carousel-wrapper">
 		<ul class="pik-carousel-container">
-			<li>
-				<img src="" alt="" />
-				<div class="sc-content">
-					<h2></h2>
-				</div>
-				<div class="sc-author">
-					<h2></h2>
-				</div>
-			</li>
 
 			<li>
 				<img src="" alt="" />
