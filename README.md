@@ -4,7 +4,7 @@ Pik is a responsive slider which you included on your template. It is totaly res
 # uses
   adding markup
   
-  <div class="pik-carousel">
+ ` <div class="pik-carousel">
 	<div class="pik-carousel-wrapper">
 		<ul class="pik-carousel-container">
 			<li>
@@ -30,7 +30,7 @@ Pik is a responsive slider which you included on your template. It is totaly res
 
 		</ul>
 	</div>
-</div>
+</div>`
 		
 # Configuration
 	<link href="css/tooltip_skin_variation.css" type="text/css" rel="stylesheet" />
