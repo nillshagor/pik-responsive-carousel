@@ -1,25 +1,3 @@
-/**
- *
- * pik jQuery Touch Carousel
- * URL: http://www.pikplugins.com
- * Version: 1.0.2
- * Author: pik Plugins
- * Author URL: http://www.pikplugins.com
- *
- */
-
-/**
-*	Table of Contents
-*	
-*	1. Media Queries
-*	2. Container Styles
-*	3. Carousel Item Styles
-*	4. Current Content Styles
-*	5. Gradient Overlay Styles
-*	6. Navigation Styles
-*	7. Preloader Styles
-*	8. Other Styles
-*/
 
 /**********************************************
 *
@@ -52,6 +30,7 @@
 	}
 }
 
+
 /**********************************************
 *
 * 2. Container Styles
@@ -78,6 +57,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 
 /**********************************************
 *
