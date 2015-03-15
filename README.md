@@ -2,12 +2,12 @@
 Pik is a responsive slider which you included on your template. It is totaly responsive and all major browser support.
 
 # uses
-  #adding markup
+  adding markup
   				<div class="pik-carousel">
 					<div class="pik-carousel-wrapper">
 						<ul class="pik-carousel-container">
 							<li>
-								<img src="images/4/1.jpg" alt="" />
+								<img src="" alt="" />
 								<div class="sc-content">
 									<h2>we are driving crazy with each and every web-miracle we work on</h2>
 								</div>
@@ -17,7 +17,7 @@ Pik is a responsive slider which you included on your template. It is totaly res
 							</li>
 
 							<li>
-								<img src="images/4/2.jpg" alt="" />
+								<img src="" alt="" />
 								<div class="sc-content">
 									<h2>we are driving crazy with each and every web-miracle we work on</h2>
 								</div>
