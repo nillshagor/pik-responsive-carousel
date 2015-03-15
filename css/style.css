@@ -1,0 +1,87 @@
+/*
+* Author: Nillsahgor
+* URL: http://themeforest.net/user/nillshagor/
+*/
+
+/* =============================================================== */
+/* Import Section
+================================================================ */
+@import url("base.css");				/* Default Reset, Typography, Forms, etc. */ 
+
+
+
+
+/* Headlines
+==========================*/
+.headline {
+	display: block;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0 0 10px 0;
+	margin: 20px 0 20px 0;
+}
+
+.headline span {
+	color: #888;
+	font-weight: normal;
+	font-size: 12px;
+	float: right;
+}
+
+h5.headline {
+	padding: 0 0 8px 0;
+	margin: 0px 0 12px 0;
+}
+
+
+/* Page Title
+==========================*/
+#page-title {
+	border: 1px solid #e2e2e2;
+	border-left: none;
+	border-right: none;
+	margin-top: -1px;
+	background-image: linear-gradient(bottom, #FAFAFA 0%, #FCFCFC 100%);
+	background-image: -o-linear-gradient(bottom, #FAFAFA 0%, #FCFCFC 100%);
+	background-image: -moz-linear-gradient(bottom, #FAFAFA 0%, #FCFCFC 100%);
+	background-image: -webkit-linear-gradient(bottom, #FAFAFA 0%, #FCFCFC 100%);
+	background-image: -ms-linear-gradient(bottom, #FAFAFA 0%, #FCFCFC 100%);
+	background-color: #fafafa;
+}
+
+#page-title h2 {
+	font-weight: normal;
+	font-size: 22px;
+	padding: 21px 0;
+}
+
+#page-title span {color:#a0a0a0;}
+
+
+/* Images Overlay
+==========================*/
+.item-img, .post-img {position: relative;}
+
+.overlay {
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+	z-index: 40;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	-webkit-transition: opacity 180ms ease-in-out;
+	-moz-transition: opacity 180ms ease-in-out;
+	-o-transition: opacity 180ms ease-in-out;
+	transition: opacity 180ms ease-in-out;
+}
+
+.overlay.zoom {background: url(../images/overlay.png) no-repeat center center, url(../images/overlay_bg.png) center center;}
+
+.overlay:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
