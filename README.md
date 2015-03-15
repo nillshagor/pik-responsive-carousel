@@ -4,24 +4,24 @@ Pik is a responsive slider which you included on your template. It is totaly res
 # uses
 
 
-`<div class="pik-carousel">
-	<div class="pik-carousel-wrapper">
-		<ul class="pik-carousel-container">
-
-			<li>
-				<img src="" alt="" />
-				<div class="sc-content">
-					<h2></h2>
-				</div>
-				<div class="sc-author">
-					<h2></h2>
-				</div>	<h2>Leslie Lawson</h2>
-				</div>
-			</li>
-
-		</ul>
+	<div class="pik-carousel">
+		<div class="pik-carousel-wrapper">
+			<ul class="pik-carousel-container">
+	
+				<li>
+					<img src="" alt="" />
+					<div class="sc-content">
+						<h2></h2>
+					</div>
+					<div class="sc-author">
+						<h2></h2>
+					</div>	<h2>Leslie Lawson</h2>
+					</div>
+				</li>
+	
+			</ul>
+		</div>
 	</div>
-</div>`
 		
 # Configuration
 	<link href="css/tooltip_skin_variation.css" type="text/css" rel="stylesheet" />
