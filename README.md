@@ -45,5 +45,63 @@ Pik is a responsive slider which you included on your template. It is totaly res
 	      });	
 	</script>
 	
+Refer to the **Options** section below for more info on the various options
+available.
+
+Options:
+--------
+A complete listing of the options that can be passed to the `carousel` method is below.
+
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Data Attribute</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><i>from</i></td>
+    <td><i>data-from</i></td>
+    <td>The number to start counting from. <i>(default: 0)</i></td>
+  </tr>
+  <tr>
+    <td><i>to</i></td>
+    <td><i>data-to</i></td>
+    <td>The number to stop counting at. <i>(default: 100)</i></td>
+  </tr>
+  <tr>
+    <td><i>speed</i></td>
+    <td><i>data-speed</i></td>
+    <td>The number of milliseconds it should take to finish counting.
+        <i>(default: 1000)</i></td>
+  </tr>
+  <tr>
+    <td><i>refreshInterval</i></td>
+    <td><i>data-refresh-interval</i></td>
+    <td>The number of milliseconds to wait between refreshing the counter.
+        <i>(default: 100)</i></td>
+  </tr>
+  <tr>
+    <td colspan="2"><i>formatter (value, options)</i></td>
+    <td>A handler that is used to format the current value before rendering to
+        the DOM.  The true current value and options set is passed to the
+        function, and it is run in the context of the DOM element.  It must
+        return the formatted value. <i>(default:
+        <code>value.toFixed(options.decimal)</code>)</i></td>
+  </tr>
+  <tr>
+    <td colspan="2"><i>onUpdate (value)</i></td>
+    <td>A callback function that is triggered for every iteration that the
+        counter updates.  The currently rendered value is passed to the
+        function, and it is called in the context of the DOM element.
+        <i>(default: null)</i></td>
+  </tr>
+  <tr>
+    <td colspan="2"><i>onComplete (value)</i></td>
+    <td>A callback function that is triggered when counting finishes.  The
+        final rendered value is passed to the function, and it is called in the
+        context of the DOM element. <i>(default: null)</i></td>
+  </tr>
+</table>
+
 #License:
 pik carousel is released under the [MIT license](http://www.opensource.org/licenses/MIT).
