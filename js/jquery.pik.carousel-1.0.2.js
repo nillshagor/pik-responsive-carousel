@@ -1,10 +1,10 @@
 /**
  *
- * PIK jQuery Touch Carousel
- * URL: http://www.skyplugins.com
- * Version: 1.0.2
- * Author: Sky Plugins
- * Author URL: http://www.skyplugins.com
+ * PIK jQuery Responsive Carousel
+ * URL: http://nillshagor.github.io/pik-responsive-carousel/
+ * Version: 1.0.0
+ * Author: nillshagor
+ * Author URL: https://github.com/nillshagor
  *
  */
 
@@ -44,10 +44,10 @@ PIK.Utils = {
         switch (a) {
             case "openhand":
                 $("body").css("cursor",
-                    "url(images/sc-graphics/openhand.cur), auto");
+                    "url(images/pc-graphics/openhand.cur), auto");
                 break;
             case "closedhand":
-                $("body").css("cursor", "url(images/sc-graphics/closedhand.cur), auto");
+                $("body").css("cursor", "url(images/pc-graphics/closedhand.cur), auto");
                 break;
             default:
                 $("body").css("cursor", a)
@@ -163,7 +163,7 @@ PIK.CarouselItem = function(a, b) {
     this.url = a.children("a");
     this.imageElement = a.find("img");
     this.image = this.imageElement.get(0);
-    this.content = a.children(".sc-content");
+    this.content = a.children(".pc-content");
     this.subscribers = {
         load: []
     };
@@ -411,11 +411,11 @@ PIK.Carousel.prototype = {
         this.dom.items = this.dom.container.children("li");
         this.dom.links = this.dom.container.find("li > a");
         this.dom.images = this.dom.container.find("li img");
-        this.dom.carousel.addClass("sc-no-select");
+        this.dom.carousel.addClass("pc-no-select");
         a.preload && !1 != $.support.leadingWhitespace && (this.dom.wrapper.css({
             visibility: "hidden",
             opacity: 0
-        }), a.showPreloader && (this.preloader = $('<div class="sc-preloader"></div>'), this.dom.carousel.append(this.preloader)));
+        }), a.showPreloader && (this.preloader = $('<div class="pc-preloader"></div>'), this.dom.carousel.append(this.preloader)));
         this.dom.images.each(function() {
             $(this).addClass("sc-image");
             this.ondragstart = function() {
@@ -461,7 +461,7 @@ PIK.Carousel.prototype = {
             a.updateCursor()
         });
         this.selectedItem = this.getStartItem();
-        this.selectedItem.addClass("sc-selected");
+        this.selectedItem.addClass("pc-selected");
         this.updatePlugin()
     },
     initGradientOverlays: function() {
@@ -475,9 +475,9 @@ PIK.Carousel.prototype = {
         }
     },
     initContentWrapper: function() {
-        var a = $('<div class="sc-content-wrapper"></div>');
-        this.contentContainer = $('<div class="sc-content-container"></div>');
-        this.contentContainer.append('<div class="sc-content"><h2></h2><p></p></div>');
+        var a = $('<div class="pc-content-wrapper"></div>');
+        this.contentContainer = $('<div class="pc-content-container"></div>');
+        this.contentContainer.append('<div class="pc-content"><h2></h2></div>');
         a.append(this.contentContainer);
         !1 != $.support.leadingWhitespace &&
             this.settings.preload && this.contentContainer.css({
@@ -489,8 +489,8 @@ PIK.Carousel.prototype = {
     initNavigationButtons: function() {
         var a = this;
         if (this.settings.navigationButtonsVisible) {
-            var b = $('<a href="#" class="sc-nav-button sc-prev sc-no-select"></a>'),
-                c = $('<a href="#" class="sc-nav-button sc-next sc-no-select"></a>');
+            var b = $('<a href="#" class="pc-nav-button pc-prev pc-no-select"></a>'),
+                c = $('<a href="#" class="pc-nav-button pc-next pc-no-select"></a>');
             this.dom.carousel.append(b);
             this.dom.carousel.append(c);
             b.on("click", function(b) {
@@ -583,8 +583,8 @@ PIK.Carousel.prototype = {
         var c = this.settings;
         if ("number" === typeof a) var d = this.carouselItems[a];
         else "object" === typeof a && (d = a);
-        this.selectedItem && this.selectedItem.removeClass("sc-selected");
-        d.addClass("sc-selected");
+        this.selectedItem && this.selectedItem.removeClass("pc-selected");
+        d.addClass("pc-selected");
         this.selectedItem = d;
         c = this.selectedItem.getBaseOffset() + c.itemWidth / 2 + c.selectedItemDistance;
         this.container.setX(this.centerX - c, b);
@@ -764,12 +764,12 @@ PIK.Carousel.prototype = {
     },
     createGradientOverlay: function(a, b, c, d, g) {
         if (PIK.Utils.hasCanvasSupport()) {
-            var e = $('<canvas class="sc-overlay" width="' + g + '" height="1"></canvas'),
+            var e = $('<canvas class="pc-overlay" width="' + g + '" height="1"></canvas'),
                 f = e.get(0).getContext("2d");
             d = PIK.Utils.hexToRGB(d);
             var h = null;
             e.css("width", g + "px");
-            e.addClass("sc-overlay-" + a);
+            e.addClass("pc-overlay-" + a);
             "left" == a ? h = f.createLinearGradient(0, 0, g, 0) : "right" == a && (h = f.createLinearGradient(g, 0, 0, 0));
             h.addColorStop(b, "rgba(" + d.r + ", " + d.g + ", " + d.b + ", 1.0)");
             h.addColorStop(c, "rgba(" + d.r + ", " + d.g + ", " + d.b + ", 0)");

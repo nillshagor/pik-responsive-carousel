@@ -33,13 +33,13 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.pik-carousel .sc-overlay {
+	.pik-carousel .pc-overlay {
 		width: 88px !important;
 	}
 }
 
 @media only screen and (max-width: 479px) {
-	.pik-carousel .sc-overlay {
+	.pik-carousel .pc-overlay {
 		width: 15px !important;
 	}
 	
@@ -49,6 +49,21 @@
 	
 	.pik-carousel .sc-nav-button.sc-prev {
 		left: 5px !important;
+	}
+}
+@media only screen and (max-width: 959px) {
+	.pik-carousel .pc-content-wrapper .pc-content-container .pc-content {
+		  min-width: 690px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.pik-carousel .pc-content-wrapper .pc-content-container .pc-content {
+		  min-width: 300px !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.pik-carousel .pc-content-wrapper .pc-content-container .pc-content {
+		  min-width: 260px !important;
 	}
 }
 
@@ -99,15 +114,15 @@
 	border: none;
 }
 
-.pik-carousel .pik-carousel-container .sc-content {
+.pik-carousel .pik-carousel-container .pc-content {
 	display: none;
 }
-.pik-carousel .pik-carousel-container .sc-author {
+.pik-carousel .pik-carousel-container .pc-author {
 	display: none;
 	margin-top: 10px;
 }
 
-.pik-carousel .pik-carousel-container .sc-selected .sc-author {
+.pik-carousel .pik-carousel-container .pc-selected .pc-author {
 	display: block;
 }
 
@@ -116,28 +131,30 @@
 * 4. Current Content Styles
 *
 **********************************************/
-.pik-carousel .sc-content-wrapper {
+.pik-carousel .pc-content-wrapper {
 	position: absolute;
 	text-align: center;
 	top: 6%;
 	left: 50%;
 	z-index: 4999;
+
 }
 
-.pik-carousel .sc-content-container {
+.pik-carousel .pc-content-container {
 	position: relative;
 	left: -50%;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	padding: 0;
+	border: 2px solid #353535;
 }
 
-.pik-carousel .sc-content-wrapper .sc-content-container .sc-content {
+.pik-carousel .pc-content-wrapper .pc-content-container .pc-content {
 	background-color: rgba(0,0,0,0.5);
 	padding: 14px;
-	min-width: 300px;
+	min-width: 840px;
 }
 
-.pik-carousel .sc-content-wrapper .sc-content-container:after {
+.pik-carousel .pc-content-wrapper .pc-content-container:after {
 	position: absolute;
 	display: block;
 	content: "";
@@ -149,17 +166,16 @@
 	margin-left: -10px;
 }
 
-.pik-carousel .sc-content-wrapper h2 {
+.pik-carousel .pc-content-wrapper h2 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 18px;
 	margin: 0;
 	padding: 0;
-	text-shadow: 0px 1px 1px #333;
 }
 
-.pik-carousel .sc-content-wrapper p {
+.pik-carousel .pc-content-wrapper p {
 	color: #d6d6d6;
 	font-size: 12px;
 	margin: 0;
@@ -167,13 +183,13 @@
 	text-shadow: 0px 1px 1px #333;
 }
 
-.pik-carousel .sc-content-wrapper a {
+.pik-carousel .pc-content-wrapper a {
 	text-decoration: none;
 	color: #d6d6d6;
 	border-bottom: 1px dotted #d6d6d6;
 }
 
-.sc-author {
+.pc-author {
     text-align: center;
 }
 /**********************************************
@@ -181,7 +197,7 @@
 * 5. Gradient Overlay Styles
 *
 **********************************************/
-.pik-carousel .sc-overlay {
+.pik-carousel .pc-overlay {
 	position: absolute;
 	height: 100%;
 	z-index: 4998;
@@ -189,11 +205,11 @@
 	top: 0;
 }
 
-.pik-carousel .sc-overlay-left {
+.pik-carousel .pc-overlay-left {
 	left: -0.1px;
 }
 
-.pik-carousel .sc-overlay-right {
+.pik-carousel .pc-overlay-right {
 	right: -0.1px;
 }
 
@@ -202,7 +218,7 @@
 * 6. Navigation Styles
 *
 **********************************************/
-.pik-carousel .sc-nav-button {
+.pik-carousel .pc-nav-button {
 	position: absolute;
 	top: 50%;
 	z-index: 5000;
@@ -215,22 +231,22 @@
 	-o-transition: all 0.3s;
 }
 
-.pik-carousel .sc-nav-button.sc-next {
-	background: url("../images/sc-graphics/tooltip_skin_navigation.png") no-repeat -42px 0px;
+.pik-carousel .pc-nav-button.pc-next {
+	background: url("../images/pc-graphics/tooltip_skin_navigation.png") no-repeat -42px 0px;
 	right: 15px;
 }
 
-.no-touch .pik-carousel .sc-nav-button.sc-next:hover {
-	background: url("../images/sc-graphics/tooltip_skin_navigation.png") no-repeat -42px -41px;
+.no-touch .pik-carousel .pc-nav-button.pc-next:hover {
+	background: url("../images/pc-graphics/tooltip_skin_navigation.png") no-repeat -42px -41px;
 }
 
-.pik-carousel .sc-nav-button.sc-prev {
-	background: url("../images/sc-graphics/tooltip_skin_navigation.png") no-repeat 0px 0px;	
+.pik-carousel .pc-nav-button.pc-prev {
+	background: url("../images/pc-graphics/tooltip_skin_navigation.png") no-repeat 0px 0px;	
 	left: 15px;
 }
 
-.no-touch .pik-carousel .sc-nav-button.sc-prev:hover {
-	background: url("../images/sc-graphics/tooltip_skin_navigation.png") no-repeat 0px -41px;
+.no-touch .pik-carousel .pc-nav-button.pc-prev:hover {
+	background: url("../images/pc-graphics/tooltip_skin_navigation.png") no-repeat 0px -41px;
 }
 
 /**********************************************
@@ -238,7 +254,7 @@
 * 7. Preloader Styles
 *
 **********************************************/
-.pik-carousel .sc-preloader {
+.pik-carousel .pc-preloader {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -246,7 +262,7 @@
 	height: 24px;
 	margin-top: -22px;
 	margin-left: -22px;
-	background: #ebebeb url("../images/sc-graphics/preloader.gif") no-repeat 50% 50%;
+	background: #ebebeb url("../images/pc-graphics/preloader.gif") no-repeat 50% 50%;
 	padding: 10px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -258,7 +274,7 @@
 * 8. Other Styles
 *
 **********************************************/
-.sc-no-select {
+.pc-no-select {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
