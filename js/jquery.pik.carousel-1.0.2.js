@@ -1,10 +1,18 @@
 /**
  *
+<<<<<<< HEAD
  * PIK jQuery Responsive Carousel
  * URL: http://nillshagor.github.io/pik-responsive-carousel/
  * Version: 1.0.0
  * Author: nillshagor
  * Author URL: https://github.com/nillshagor
+=======
+ * PIK jQuery Touch Carousel
+ * URL: http://www.skyplugins.com
+ * Version: 1.0.2
+ * Author: Sky Plugins
+ * Author URL: http://www.skyplugins.com
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
  *
  */
 
@@ -44,10 +52,17 @@ PIK.Utils = {
         switch (a) {
             case "openhand":
                 $("body").css("cursor",
+<<<<<<< HEAD
                     "url(images/pc-graphics/openhand.cur), auto");
                 break;
             case "closedhand":
                 $("body").css("cursor", "url(images/pc-graphics/closedhand.cur), auto");
+=======
+                    "url(images/sc-graphics/openhand.cur), auto");
+                break;
+            case "closedhand":
+                $("body").css("cursor", "url(images/sc-graphics/closedhand.cur), auto");
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
                 break;
             default:
                 $("body").css("cursor", a)
@@ -163,7 +178,11 @@ PIK.CarouselItem = function(a, b) {
     this.url = a.children("a");
     this.imageElement = a.find("img");
     this.image = this.imageElement.get(0);
+<<<<<<< HEAD
     this.content = a.children(".pc-content");
+=======
+    this.content = a.children(".sc-content");
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
     this.subscribers = {
         load: []
     };
@@ -411,11 +430,19 @@ PIK.Carousel.prototype = {
         this.dom.items = this.dom.container.children("li");
         this.dom.links = this.dom.container.find("li > a");
         this.dom.images = this.dom.container.find("li img");
+<<<<<<< HEAD
         this.dom.carousel.addClass("pc-no-select");
         a.preload && !1 != $.support.leadingWhitespace && (this.dom.wrapper.css({
             visibility: "hidden",
             opacity: 0
         }), a.showPreloader && (this.preloader = $('<div class="pc-preloader"></div>'), this.dom.carousel.append(this.preloader)));
+=======
+        this.dom.carousel.addClass("sc-no-select");
+        a.preload && !1 != $.support.leadingWhitespace && (this.dom.wrapper.css({
+            visibility: "hidden",
+            opacity: 0
+        }), a.showPreloader && (this.preloader = $('<div class="sc-preloader"></div>'), this.dom.carousel.append(this.preloader)));
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
         this.dom.images.each(function() {
             $(this).addClass("sc-image");
             this.ondragstart = function() {
@@ -461,7 +488,11 @@ PIK.Carousel.prototype = {
             a.updateCursor()
         });
         this.selectedItem = this.getStartItem();
+<<<<<<< HEAD
         this.selectedItem.addClass("pc-selected");
+=======
+        this.selectedItem.addClass("sc-selected");
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
         this.updatePlugin()
     },
     initGradientOverlays: function() {
@@ -475,9 +506,15 @@ PIK.Carousel.prototype = {
         }
     },
     initContentWrapper: function() {
+<<<<<<< HEAD
         var a = $('<div class="pc-content-wrapper"></div>');
         this.contentContainer = $('<div class="pc-content-container"></div>');
         this.contentContainer.append('<div class="pc-content"><h2></h2></div>');
+=======
+        var a = $('<div class="sc-content-wrapper"></div>');
+        this.contentContainer = $('<div class="sc-content-container"></div>');
+        this.contentContainer.append('<div class="sc-content"><h2></h2><p></p></div>');
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
         a.append(this.contentContainer);
         !1 != $.support.leadingWhitespace &&
             this.settings.preload && this.contentContainer.css({
@@ -489,8 +526,13 @@ PIK.Carousel.prototype = {
     initNavigationButtons: function() {
         var a = this;
         if (this.settings.navigationButtonsVisible) {
+<<<<<<< HEAD
             var b = $('<a href="#" class="pc-nav-button pc-prev pc-no-select"></a>'),
                 c = $('<a href="#" class="pc-nav-button pc-next pc-no-select"></a>');
+=======
+            var b = $('<a href="#" class="sc-nav-button sc-prev sc-no-select"></a>'),
+                c = $('<a href="#" class="sc-nav-button sc-next sc-no-select"></a>');
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
             this.dom.carousel.append(b);
             this.dom.carousel.append(c);
             b.on("click", function(b) {
@@ -583,8 +625,13 @@ PIK.Carousel.prototype = {
         var c = this.settings;
         if ("number" === typeof a) var d = this.carouselItems[a];
         else "object" === typeof a && (d = a);
+<<<<<<< HEAD
         this.selectedItem && this.selectedItem.removeClass("pc-selected");
         d.addClass("pc-selected");
+=======
+        this.selectedItem && this.selectedItem.removeClass("sc-selected");
+        d.addClass("sc-selected");
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
         this.selectedItem = d;
         c = this.selectedItem.getBaseOffset() + c.itemWidth / 2 + c.selectedItemDistance;
         this.container.setX(this.centerX - c, b);
@@ -764,12 +811,20 @@ PIK.Carousel.prototype = {
     },
     createGradientOverlay: function(a, b, c, d, g) {
         if (PIK.Utils.hasCanvasSupport()) {
+<<<<<<< HEAD
             var e = $('<canvas class="pc-overlay" width="' + g + '" height="1"></canvas'),
+=======
+            var e = $('<canvas class="sc-overlay" width="' + g + '" height="1"></canvas'),
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
                 f = e.get(0).getContext("2d");
             d = PIK.Utils.hexToRGB(d);
             var h = null;
             e.css("width", g + "px");
+<<<<<<< HEAD
             e.addClass("pc-overlay-" + a);
+=======
+            e.addClass("sc-overlay-" + a);
+>>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
             "left" == a ? h = f.createLinearGradient(0, 0, g, 0) : "right" == a && (h = f.createLinearGradient(g, 0, 0, 0));
             h.addColorStop(b, "rgba(" + d.r + ", " + d.g + ", " + d.b + ", 1.0)");
             h.addColorStop(c, "rgba(" + d.r + ", " + d.g + ", " + d.b + ", 0)");
