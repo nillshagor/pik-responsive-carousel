@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 * Author: Nillsahgor
 * URL: http://themeforest.net/user/nillshagor/
@@ -15,7 +15,7 @@
 
 
 
-=======
+
 
 /* Headlines
 ==========================*/
@@ -41,16 +41,14 @@ h5.headline {
 
 
 #page-title span {color:#a0a0a0;}
->>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
+
 
 
 /* Images Overlay
 ==========================*/
-<<<<<<< HEAD
 
-=======
 .item-img, .post-img {position: relative;}
->>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
+
 
 .overlay {
 	height: 100%;
@@ -76,8 +74,7 @@ h5.headline {
 	-moz-opacity: 1;
 	filter:alpha(opacity=100);
 }
-<<<<<<< HEAD
-=======
+
 
 
 
@@ -237,4 +234,3 @@ a.current-page {
 .project-nav .prev {float: right;}
 
 
->>>>>>> d19c8d9796744837fd77a7bd6e85797b372a0da4
